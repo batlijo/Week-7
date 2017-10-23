@@ -1,0 +1,23 @@
+	<!DOCTYPE html>
+	<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Giphy Api?</title>
+	</head>
+
+	<body>
+		<script src="https://cdnjs.cloudfare.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+		></script>jquery
+		<script type="text/javascript">
+			var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+			$.ajax({
+				url: queryURL,
+				method: 'GET'
+			}).done(function(response) {
+				console.log(response);
+			});
+		</script>
+
+	</body>
+	</html>
